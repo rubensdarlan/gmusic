@@ -1,17 +1,272 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>cuTODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    
-    <body>
-        <div>TODO write content</div>
-    </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<!--Chamando os arquivos necessários-->
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand logotipo">
+					<img src="img/GmusicImage.png" alt="G-Music">
+				</a>
+			</div>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav">
+						<li><a href="">Meu Perfil</a></li>
+						<li><a href="">Cadastro de Eventos</a></li>
+						<li><a href="">Lista de Eventos</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Minha Conta
+							<span class="caret"></span>
+							</a>
+							<div class="dropdown-menu perfil">
+								<div class="col-sm-4 hidden-xs">
+									<img class="img-responsive img-rounded" src="https://api.adorable.io/avatars/100/watchuru.png">
+								</div>
+								<ul class="list-unstyled col-sm-8">
+									<li>Fulano de tal</li>
+									<li><a href="">Alterar Perfil</a></li>
+									<li><a href="">Sair</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+		</div>
+	</nav>
+
+	<!--Menu principal-->
+
+	<div class="container">
+		<ol class="breadcrumb">
+			<li><a href="">Início</a></li>
+			<li><a href="">Perfil</a></li>
+			<li><a href="">Cadastro de Eventos</a></li>
+			<li class="active">Eventos</a></li>
+		</ol>
+			<div class="roll cabecalho">
+				<div class="col-xs-12 col-md-6">
+					<h1>Eventos</h1>
+				</div>
+					<div class="col-xs-12 col-md-4 col-md-offset-2 busca">
+						<div class="input-group">
+							<input type="text" name="busca" class="form-control" placeholder="Pesquisar por local do evento">
+							<span class="input-group-btn">
+								<button type="button" class="btn btn-default">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+						</div>
+					</div>
+			</div>
+
+	<!--Tabela de dados-->
+	
+		<table class="dados-os table table-striped table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>Código</th>
+					<th>Data</th>
+					<th>Local</th>
+					<th>Cidade</th>
+					<th>Banda</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>5115</td>
+					<td>02/02/2016</td>
+					<td>Boulevard</td>
+					<td>Barbalha</td>
+					<td>Sonata</td>
+					<td><span class="label label-default">Ativo</span></td>
+					<td class="text-center">
+						<a href="" data-toggle="tooltip" title="Finalizar"><span class="glyphicon glyphicon-ok text-success"></span></a>
+						<a href="" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+						<a href="" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash text-danger"></span></a>
+					</td>
+				</tr>
+				<tr>
+					<td>5114</td>
+					<td>03/02/2016</td>
+					<td>Elitas</td>
+					<td>Juazeiro</td>
+					<td>Prisma</td>
+					<td><span class="label label-danger">Ativo</span></td>
+					<td class="text-center">
+						<a href="" data-toggle="tooltip" title="Finalizar"><span class="glyphicon glyphicon-ok text-success"></span></a>
+						<a href="" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+						<a href="" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash text-danger"></span></a>
+					</td>
+				</tr>
+				<tr>
+					<td>5116</td>
+					<td>04/02/2016</td>
+					<td>Saritas</td>
+					<td>Barbalha</td>
+					<td>Scala</td>
+					<td><span class="label label-success">Ativo</span></td>
+					<td class="text-center">
+						<a href="" data-toggle="tooltip" title="Finalizar"><span class="glyphicon glyphicon-ok text-success"></span></a>
+						<a href="" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+						<a href="" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash text-danger"></span></a>
+					</td>
+				</tr>
+				<tr>
+					<td>5116</td>
+					<td>02/02/2016</td>
+					<td>Boulevard</td>
+					<td>Barbalha</td>
+					<td>Baby Som</td>
+					<td><span class="label label-default">Ativo</span></td>
+					<td class="text-center">
+						<a href="" data-toggle="tooltip" title="Finalizar"><span class="glyphicon glyphicon-ok text-success"></span></a>
+						<a href="" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+						<a href="" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash text-danger"></span></a>
+					</td>
+				</tr>
+				<tr>
+					<td>5117</td>
+					<td>02/02/2016</td>
+					<td>Boulevard</td>
+					<td>Barbalha</td>
+					<td>Erika Diniz</td>
+					<td><span class="label label-primary">Ativo</span></td>
+					<td class="text-center">
+						<a href="" data-toggle="tooltip" title="Finalizar"><span class="glyphicon glyphicon-ok text-success"></span></a>
+						<a href="" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
+						<a href="" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash text-danger"></span></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>	
+
+	<!--Novo Evento-->
+		<div>
+			<footer class="row">
+				<div class="col-sm-6">
+					<button class="btn btn-primary" data-toggle="modal" data-target="#NovoEV">Novo Evento</button>
+				</div>
+				<div class="col-sm-6 paginacao text-right">
+					<ul class="pagination">
+						<li class="disabled"><a href=""><span><<</span></a></li>
+						<li class="active"><a href="">1</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+						<li><a href=""><span>>></span></a></li>
+					</ul>
+				</div>
+
+      <!-- Janela do Modal-->
+
+		</footer>
+				</div>
+					<div class="modal fade" id="NovoEV">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" data-dismiss="modal" class="close">
+										<span>&times;</span>
+									</button>
+									<h4 class="modal-title">Novo Evento</h4>
+								</div>
+								<form>									
+									<div class="modal-body">
+
+										<!--<div class="alert alert-danger">
+											<button type="button" class="close" data-dismiss="alert">
+												<span>&times</span>
+											</button>
+											<b>Erro Grave!</b> Se liga mané!
+										</div>-->	
+
+										<div class="row">
+											<div class="formgroup col-xs-12">
+												<label>Código do evento</label>
+												<p class="form-control-static">321321321</p>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="form-group col-sm-5">
+												<label class="control-label" for="Banda">Banda</label>
+												<select id="Banda" class="form-control">
+													<option value="">Selecione...</option>
+													<option value="1">Fábio Carneirinho</option>
+													<option value="2">Tiro Certeiro</option>
+													<option value="3">Maria Luíza</option>
+												</select>
+											</div>
+											<div class="form-group col-sm-7">
+												<label class="control-label" for="tipoEvento">Tipo de Evento</label>
+												<select id="tipoEvento" class="form-control">
+													<option value="">Selecione...</option>
+													<option value="1">Evento de Rua</option>
+													<option value="2">Evento Particular</option>
+													<option value="3">Evento Fechado</option>
+												</select>
+											</div>
+										</div>
+										<div class="row">
+											<div class="form-group col-xs-12">
+											<label class="control-label" for="descricao">Descrição</label>
+												<textarea id="descricao" class="form-control" rows="3">	</textarea>	
+											</div>	
+											<div class="form-group col-sm-4">
+											<label class="control-label" for="cache">Cachê</label>
+											<div class="input-group">
+												<div class="input-group-addon">R$</div>
+												<input type="text" name="cachê" class="form-control">
+											</div>
+										</div>
+											<div class="form-group col-sm-4">
+											<label class="control-label" for="data">Data do Evento</label>
+											<div class="input-group date" data-provide="datepicker">				
+												<input type="text" name="cachê" class="form-control">
+													<div class="input-group-addon">
+													<span class="glyphicon glyphicon-th"></span>
+												</div>
+											</div>
+										</div>										
+									</div>
+
+									</div>
+									<div class="modal-footer">
+										<button type="reset" class="btn btn-danger">Limpar</button>
+										<button type="submit" class="btn btn-primary">Salvar</button>
+									</div>
+								</form>
+							</div>
+						</div>
+				</div>
+
+	<!-- Scripts-->
+
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-datepicker.min.js"></script>
+		<script src="js/bootstrap-datepicker.pt-BR.min.js"></script>
+		<script src="js/main.js"></script>
+
 </html>
+</body>
